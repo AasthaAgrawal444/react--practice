@@ -14,14 +14,19 @@
 //     ,document.getElementById("root")
 //     );
 
-const Name = "Aastha";
-const currentdate = new Date();
-const year = currentdate.getFullYear();
-    
-ReactDOM.render(
-  <div>
-    <h1>My name is {Name}</h1>
-    <p>Current year is {year}</p>
-  </div>,
-  document.getElementById("root")
-);
+ const Name = "Aastha";
+ const currentdate = new Date();
+ const year = currentdate.getFullYear();
+   
+ const customStyle = {
+  color: "red",
+  border: "1px solid black",
+ }
+
+ ReactDOM.render(
+   <div>
+     <h1 style = {customStyle}>My name is {Name}</h1>
+     <p style= {{color: "blue"}}>Current year is {year}</p>
+   </div>,
+   document.getElementById("root")
+ );
